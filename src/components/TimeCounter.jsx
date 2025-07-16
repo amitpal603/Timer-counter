@@ -5,8 +5,10 @@ function TimeCounter() {
     const [Tcounter, setTcounter] = useState(0);
     const InterRef = useRef(null)
 
+    
+
     const startTimer = () => {
-       // Prevent multiple intervals
+       
         InterRef.current = setInterval(() => {
             setTcounter((prev) => prev + 1);
         }, 1000);
